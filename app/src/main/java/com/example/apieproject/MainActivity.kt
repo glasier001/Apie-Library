@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             val json = GsonBuilder().excludeFieldsWithoutExposeAnnotation().create()
                 .toJson(apieSubmission)
             Log.e("apie submission", json)
-//        Log.e("apie info", Gson().toJson(APIEPackage.apiePackageInfo))
+        Log.e("apie info","dsd")
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
