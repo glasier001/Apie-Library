@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_station_a"
+    app:startDestination="@id/scenarioFragment">
+    <fragment
+        android:id="@+id/scenarioFragment"
+        android:name="com.example.apielib.ui.ScenarioFragment"
+        android:label="ScenarioFragment"
+        tools:layout="@layout/fragment_scenario">
+        <action
+            android:id="@+id/action_scenarioFragment_to_stationAFragment"
+            app:destination="@id/stationAFragment" />
+        <argument
+            android:name="station"
+            android:defaultValue="STATION_A"
+            app:argType="com.example.apielib.utils.Station" />
+    </fragment>
+    <fragment
+        android:id="@+id/stationAFragment"
+        android:name="com.example.apielib.ui.StationAFragment"
+        android:label="fragment_station_a"
+        tools:layout="@layout/fragment_station_a">
+
+    </fragment>
+
+
+</navigation>

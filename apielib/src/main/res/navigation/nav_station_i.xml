@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_station_i"
+    app:startDestination="@id/scenarioFragment">
+    <fragment
+        android:id="@+id/scenarioFragment"
+        android:name="com.example.apielib.ui.ScenarioFragment"
+        android:label="ScenarioFragment"
+        tools:layout="@layout/fragment_scenario">
+        <argument
+            android:name="station"
+            android:defaultValue="STATION_I"
+            app:argType="com.example.apielib.utils.Station" />
+        <action
+            android:id="@+id/action_scenarioFragment_to_stationIFragment"
+            app:destination="@id/stationIFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stationIFragment"
+        android:name="com.example.apielib.ui.StationIFragment"
+        android:label="StationI"
+        tools:layout="@layout/fragment_station_i"/>
+    <dialog
+        android:id="@+id/nav_video"
+        android:name="com.example.apielib.ui.VideoFragment"
+        android:label="Video"
+        tools:layout="@layout/fragment_video">
+        <argument
+            android:name="url"
+            app:argType="string" />
+
+    </dialog>
+    <action
+        android:id="@+id/action_global_nav_video"
+        app:destination="@id/nav_video">
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </action>
+</navigation>

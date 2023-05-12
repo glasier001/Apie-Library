@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#006ead</color>
+    <color name="colorPrimaryDark">#004e7f</color>
+    <color name="colorAccent">#006ead</color>
+    <color name="white">#ffffffff</color>
+    <color name="colorChipBackground">#03DAC6</color>
+    <color name="colorTabIndicator">#03DAC6</color>
+
+    <color name="black">#000000</color>
+    <color name="colorNewsHeaderBg">#2e68b3</color>
+    <color name="colorNews0">#ffffff</color>
+    <color name="colorNews1">#FFF1AB</color>
+    <color name="colorNews2">#FDC98B</color>
+    <color name="colorNews3">#F59780</color>
+    <color name="colorDelete">#F44336</color>
+    <color name="colorGray">#BFBFBF</color>
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.example.apielib.APIEPackage" />
+
+        <variable
+            name="viewmodel"
+            type="com.example.apielib.viewmodel.ApieVM" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt1"
+                style="@style/DrugChartBoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Patient Details"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt2"
+                style="@style/DrugChartBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{APIEPackage.apiePackageInfo.notesInfo}"
+                app:layout_constraintTop_toBottomOf="@id/txt1" />
+
+            <TextView
+                android:id="@+id/txt3"
+                style="@style/DrugChartBoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anxiety pending procedure"
+                app:layout_constraintTop_toBottomOf="@id/txt2" />
+
+            <EditText
+                android:id="@+id/txt4"
+                style="@style/DrugChartText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                app:layout_constraintTop_toBottomOf="@id/txt3" />
+
+            <TextView
+                android:id="@+id/txt5"
+                style="@style/DrugChartBoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maintaining a Safe Environment"
+                app:layout_constraintTop_toBottomOf="@id/txt4" />
+
+            <EditText
+                android:id="@+id/txt6"
+                style="@style/DrugChartText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                app:layout_constraintTop_toBottomOf="@id/txt5" />
+
+            <TextView
+                android:id="@+id/txt7"
+                style="@style/DrugChartBoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nutrition and Hydration"
+                app:layout_constraintTop_toBottomOf="@id/txt6" />
+
+            <EditText
+                android:id="@+id/txt8"
+                style="@style/DrugChartText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                app:layout_constraintTop_toBottomOf="@id/txt7" />
+
+            <TextView
+                android:id="@+id/txt9"
+                style="@style/DrugChartBoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breathing"
+                app:layout_constraintTop_toBottomOf="@id/txt8" />
+
+            <EditText
+                android:id="@+id/txt10"
+                style="@style/DrugChartText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                app:layout_constraintTop_toBottomOf="@id/txt9" />
+
+            <TextView
+                android:id="@+id/txt11"
+                style="@style/DrugChartBoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Communication/Pain"
+                app:layout_constraintTop_toBottomOf="@id/txt10" />
+
+            <EditText
+                android:id="@+id/txt12"
+                style="@style/DrugChartText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                app:layout_constraintTop_toBottomOf="@id/txt11" />
+
+            <TextView
+                android:id="@+id/txt13"
+                style="@style/DrugChartBoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobilising"
+                app:layout_constraintTop_toBottomOf="@id/txt12" />
+
+            <EditText
+                android:id="@+id/txt14"
+                style="@style/DrugChartText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                app:layout_constraintTop_toBottomOf="@id/txt13" />
+
+            <TextView
+                android:id="@+id/txt15"
+                style="@style/DrugChartBoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sleeping"
+                app:layout_constraintTop_toBottomOf="@id/txt14" />
+
+            <EditText
+                android:id="@+id/txt16"
+                style="@style/DrugChartText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                app:layout_constraintTop_toBottomOf="@id/txt15" />
+
+            <TextView
+                android:id="@+id/txt17"
+                style="@style/DrugChartBoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elimination"
+                app:layout_constraintTop_toBottomOf="@id/txt16" />
+
+            <EditText
+                android:id="@+id/txt18"
+                style="@style/DrugChartText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                app:layout_constraintTop_toBottomOf="@id/txt17" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

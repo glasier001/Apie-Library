@@ -1,0 +1,84 @@
+<resources>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    <string-array name="list_respiration">-->
+    <!--        <item>&gt;=25</item>-->
+    <!--        <item>21-24</item>-->
+    <!--        <item>18-20</item>-->
+    <!--        <item>15-17</item>-->
+    <!--        <item>12-14</item>-->
+    <!--        <item>9-11</item>-->
+    <!--        <item>&lt;=8</item>-->
+    <!--    </string-array>-->
+    <string-array name="list_air_oxygen">
+        <item>Air</item>
+        <item>Oxygen</item>
+    </string-array>
+    <string-array name="list_yes_no">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="list_pupils_reaction">
+        <item>Reacts</item>
+        <item>No Reaction</item>
+        <item>Eye Closed</item>
+    </string-array>
+    <string-array name="list_limb_movement_arms">
+        <item>Normal power</item>
+        <item>Mild weakness</item>
+        <item>Severe weakness</item>
+        <item>Spastic flexion</item>
+        <item>Extension</item>
+        <item>No Response</item>
+    </string-array>
+    <string-array name="list_limb_movement_legs">
+        <item>Normal power</item>
+        <item>Mild weakness</item>
+        <item>Severe weakness</item>
+        <item>Extension</item>
+        <item>No Response</item>
+    </string-array>
+    <string-array name="list_best_motor_response">
+        <item>Obeys Commands</item>
+        <item>Localising</item>
+        <item>Normal Flexion</item>
+        <item>Abnorma Flexion</item>
+        <item>Extension</item>
+        <item>None</item>
+        <item>Not Testable</item>
+    </string-array>
+    <string-array name="list_verbal_response">
+        <item>Orientated</item>
+        <item>Confused</item>
+        <item>Words</item>
+        <item>Sounds</item>
+        <item>None</item>
+        <item>Not Testable</item>
+        <item>Endotracheal Tube or Tracheostomy</item>
+    </string-array>
+    <string-array name="list_eye_opening">
+        <item>Spontaneous</item>
+        <item>To Sound</item>
+        <item>To Pressure</item>
+        <item>None</item>
+        <item>Not Testable</item>
+        <item>Swelling</item>
+    </string-array>
+    <string-array name="list_drug">
+        <item>1. Patient not on ward</item>
+        <item>2. Omitted for a clinical reason</item>
+        <item>3. Medicine is not available</item>
+        <item>4. Patient refused medication</item>
+        <item>5. Nausea or vomiting</item>
+        <item>6. Illegible/Incomplete prescription or wrongly prescribed medication</item>
+        <item>7. Nil by mouth</item>
+        <item>8. No IV access</item>
+        <item>9. Other reason-please document</item>
+    </string-array>
+
+    <string name="audioFileString">Have a read of the drug chart on the next tab. You will be required to verbalise what you can see in terms of what medication the patient is due and when. You will need to read and respond to all medications that you can see on the chart. Ensure that you verbalise who their prescriber is and any medications that they have already been given. Tell us what you would dispense and why. You will only have one opportunity to create this recording, so when you are ready, press RECORD. When you have finished reaching the chart, press the STOP button and the recording will be sent for assessment. After you have sent your recording, the answer will be revealed to you.</string>
+    <string name="audio_file">Audio File</string>
+    <string name="skip">Skip</string>
+    <string name="cancel">Cancel</string>
+</resources>

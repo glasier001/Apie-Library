@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_station_a">
+    <action
+        android:id="@+id/action_global_nav_station_a"
+        app:destination="@id/nav_station_a"
+        app:popUpTo="@id/nav_graph" />
+    <action
+        android:id="@+id/action_global_nav_station_p"
+        app:destination="@id/nav_station_p"
+        app:popUpTo="@id/nav_graph" />
+    <action
+        android:id="@+id/action_global_nav_station_i"
+        app:destination="@id/nav_station_i"
+        app:popUpTo="@id/nav_graph" />
+    <action
+        android:id="@+id/action_global_nav_station_e"
+        app:destination="@id/nav_station_e"
+        app:popUpTo="@id/nav_graph" />
+    <action
+        android:id="@+id/action_global_photo_dialog"
+        app:destination="@id/photoDialog" >
+        <argument
+            android:name="filePath"
+            app:argType="string" />
+    </action>
+    <action
+        android:id="@+id/action_global_pdfview_dialog"
+        app:destination="@id/pdfViewDialog" >
+        <argument
+            android:name="filePath"
+            app:argType="string" />
+    </action>
+    <include app:graph="@navigation/nav_station_a" />
+    <include app:graph="@navigation/nav_station_p" />
+    <include app:graph="@navigation/nav_station_i" />
+    <include app:graph="@navigation/nav_station_e" />
+    <dialog
+        android:id="@+id/photoDialog"
+        android:name="com.example.apielib.ui.PhotoDialog"
+        android:label="PhotoDialog"
+        tools:layout="@layout/dialog_photo">
+        <argument
+            android:name="filePath"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/pdfViewDialog"
+        android:name="com.example.apielib.ui.PdfViewDialog"
+        android:label="PdfViewDialog"
+        tools:layout="@layout/dialog_pdfview" >
+        <argument
+            android:name="filePath"
+            app:argType="string" />
+    </dialog>
+</navigation>

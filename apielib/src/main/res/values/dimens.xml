@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="grid_width">60dp</dimen>
+    <dimen name="grid_height">30dp</dimen>
+    <dimen name="grid_padding">5dp</dimen>
+
+    <dimen name="news_section_width">180dp</dimen>
+    <dimen name="news_label_width">100dp</dimen>
+    <dimen name="news_header_width">80dp</dimen>
+    <!--    <dimen name="news_chart_height">1950dp</dimen>-->
+    <dimen name="news_chart_height">1830dp</dimen>
+
+<!--    60-->
+    <dimen name="gcs_header_section_width">90dp</dimen>
+    <dimen name="gcs_label_width">160dp</dimen>
+
+    <dimen name="drug_chart_width">820dp</dimen>
+
+</resources>

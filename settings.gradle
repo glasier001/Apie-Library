@@ -1,0 +1,3 @@
+rootProject.name='APIEProject'
+include ':app'
+include ':apielib'

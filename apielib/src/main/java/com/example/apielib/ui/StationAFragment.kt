@@ -1,0 +1,62 @@
+package com.example.apielib.ui
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.View
+import androidx.activity.addCallback
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.activityViewModels
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.apielib.APIEPackage
+
+import com.example.apielib.R
+import com.example.apielib.viewmodel.ApieVM
+import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.android.synthetic.main.activity_apie.*
+import kotlinx.android.synthetic.main.fragment_station_a.*
+
+
+class StationAFragment : Fragment(R.layout.fragment_station_a) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        (activity as ApieActivity).txtTitle.text = "Assessment"
+        viewPagerA.isUserInputEnabled = false
+        viewPagerA.offscreenPageLimit = 3
+        viewPagerA.adapter = AViewPagerAdapter(this)
+        TabLayoutMediator(tabLayoutA, viewPagerA) { tab, position ->
+            tab.text = when (position) {
+                0 -> "Video"
+                1 -> "Chart"
+                else -> "Notes"
+            }
+            viewPagerA.setCurrentItem(tab.position, true)
+        }.attach()
+
+        txtNext.setOnClickListener {
+            with(activity as ApieActivity) {
+                gotoNextStation(true)
+            }
+        }
+        btnEnd.setOnClickListener { (activity as ApieActivity).endApie() }
+        requireActivity().onBackPressedDispatcher.addCallback(this) {
+            AlertDialog.Builder(requireActivity())
+                .setMessage("Do you want to exit this APIE package?").setCancelable(false)
+                .setPositiveButton("YES") { _, _ -> requireActivity().finish() }
+                .setNegativeButton("NO") { _, _ -> }
+                .create().show()
+        }
+    }
+
+
+
+}
+
+class AViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
+    override fun getItemCount() = 3
+
+    override fun createFragment(position: Int) = when (position) {
+        0 -> AdmissionFragment()
+        1 -> if (APIEPackage.apiePackageInfo.chartType == "news") NewsFragment() else GcsFragment()
+        else -> NotesFragment()
+    }
+}
