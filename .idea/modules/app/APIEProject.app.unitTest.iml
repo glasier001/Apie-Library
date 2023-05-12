@@ -14,6 +14,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/904bed73c228a4c34ba489bd6f98b7a4/databinding-adapters-3.6.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aff50f4f9c719794fcd576faa3eb17f8/databinding-runtime-3.6.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.6.1/eb1f705274c2ead3937faa217edc65f836a5acc/databinding-common-3.6.1.jar</arg>
@@ -55,23 +56,24 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/23a4b05ad1e7608ba8d84146a3c68de4/core-runtime-2.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/67355489c1fd9b88ba57b9529c01d00a/interpolator-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7da63f4867ec463c29ace3c56be1517c/jetified-kotlin-android-extensions-runtime-1.3.70.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0fa63f8615c64e1edb6716e32d14e299/jetified-kotlin-stdlib-jdk7-1.3.70.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da484be4b37f6111ed0d7a8959b0e521/jetified-kotlinx-coroutines-android-1.3.5.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/329c745f3eb559f1ff2b45919fd39672/jetified-kotlinx-coroutines-core-1.3.5.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/676818099897b93c7334ac1ae21acd0c/jetified-kotlin-stdlib-1.3.71.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e8ff24fe7e619b675748eb298bfcfdfe/jetified-kotlin-stdlib-common-1.3.71.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c8c2338d18af290464957ca7e3816b4/jetified-kotlinx-coroutines-android-1.6.4.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2112177a5173c3bc6ca05b8029c109c9/jetified-kotlinx-coroutines-core-jvm-1.6.4.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c207c02c87f4382e79e140c575ddca4/jetified-kotlin-stdlib-jdk8-1.7.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4fa3090caad9da007fe8f810bbc59b52/jetified-kotlin-stdlib-jdk7-1.7.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cf48a668c0262c681ce88aa881a5c742/jetified-kotlin-stdlib-1.7.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/598886744a646464433289f969bb11a6/jetified-kotlin-stdlib-common-1.7.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5411bda18f9ec8c2c1f86cb5fd7a7563/jetified-annotations-16.0.2.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/81e69f21d004caad2edbe77b451f2e14/constraintlayout-1.1.3-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout-solver/1.1.3/54abe9ffb22cc9019b0b6fcc10f185cc4e67b34e/constraintlayout-solver-1.1.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/534f690f5d1b32ead2a88e57a149bf8b/jetified-annotation-experimental-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5c8041521856b4a7cf50c807244641d8/jetified-annotation-experimental-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1b9500521243ba057712987e4511f734/jetified-gson-2.8.6.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aa929c7729e919535bfcab23db8350fc/multidex-2.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c82ab64ee847585aa5005c1c0d31c846/jetified-junit-4.12.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3336bac56b97c976a110cbf8c44b9dcc/jetified-hamcrest-core-1.3.jar</arg>
-                <arg>$USER_HOME$/Library/Android/sdk/platforms/android-29/android.jar</arg>
-                <arg>$USER_HOME$/Library/Android/sdk/build-tools/29.0.0/core-lambda-stubs.jar</arg>
+                <arg>$USER_HOME$/Library/Android/sdk/platforms/android-33/android.jar</arg>
+                <arg>$USER_HOME$/Library/Android/sdk/build-tools/28.0.3/core-lambda-stubs.jar</arg>
               </args>
             </stringArg>
             <stringArg name="destination" arg="$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/debugUnitTest" />
@@ -138,7 +140,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/test/java" isTestSource="true" />
     </content>
     <content url="file://$MODULE_DIR$/../../../app/src/testDebug" />
-    <orderEntry type="jdk" jdkName="Android API 29 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 33, extension level 3 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="APIEProject.apielib.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.databinding:databinding-common:3.6.1" level="project" />
@@ -146,13 +148,14 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.3.0-alpha02" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation:1.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation:1.3.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.3.70" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.70" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.5" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.71" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.71" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:16.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.constraintlayout:constraintlayout-solver:1.1.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.gson:gson:2.8.6" level="project" />
@@ -195,7 +198,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-runtime:2.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.interpolator:interpolator:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.constraintlayout:constraintlayout:1.1.3@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-experimental:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-experimental:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.multidex:multidex:2.0.1@aar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="APIEProject.app.main" />
