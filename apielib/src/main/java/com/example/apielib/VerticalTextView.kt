@@ -11,7 +11,7 @@ class VerticalTextView(
     context: Context?,
     attrs: AttributeSet?
 ) :
-    AppCompatTextView(context, attrs) {
+    AppCompatTextView(context!!, attrs) {
     var topDown = false
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(heightMeasureSpec, widthMeasureSpec)
