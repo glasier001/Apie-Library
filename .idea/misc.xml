@@ -10,6 +10,10 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.17026378896882494" />
         <entry key="apielib/src/main/res/layout/activity_apie.xml" value="0.31927083333333334" />
+        <entry key="apielib/src/main/res/layout/dialog_audio_file.xml" value="0.31927083333333334" />
+        <entry key="apielib/src/main/res/layout/dialog_pdfview.xml" value="0.31927083333333334" />
+        <entry key="apielib/src/main/res/layout/dialog_photo.xml" value="0.31927083333333334" />
+        <entry key="apielib/src/main/res/layout/fragment_admission.xml" value="0.31927083333333334" />
       </map>
     </option>
   </component>

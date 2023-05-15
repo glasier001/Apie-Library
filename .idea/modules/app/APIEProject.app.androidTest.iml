@@ -16,6 +16,7 @@
               <args>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/a932cce32cb2f7834471ee06f310c90c/transformed/jetified-junit-1.1.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/2a585efd36af7d79f5c9911af26a46ef/transformed/espresso-core-3.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../apielib/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/439f95191d4f2e83fa40ba246aa0ddf0/transformed/databinding-runtime-7.0.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/4b3146fbe700a60c72b25aa7970cab40/transformed/databinding-adapters-7.0.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/7.0.2/c604c89b40fc98b2c4f7152119e79c62d498cc38/databinding-common-7.0.2.jar</arg>
