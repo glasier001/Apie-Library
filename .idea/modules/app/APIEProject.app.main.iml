@@ -14,8 +14,6 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
-                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
-                <arg>$MODULE_DIR$/../../../apielib/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/0a1ef908b90e06caa6605af0fc97259f/transformed/databinding-adapters-4.1.3-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e38dcdb8638f9ba85f652e4103c37bb8/transformed/databinding-runtime-4.1.3-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/4.1.3/38c07effff5b5a85e4a340086efcea530695cc1c/databinding-common-4.1.3.jar</arg>
@@ -61,10 +59,10 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/203339233332ae2abb4a6ff7e9f6104a/transformed/jetified-kotlin-android-extensions-runtime-1.7.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/243533e3f801772f71c388aba7612486/transformed/jetified-kotlinx-coroutines-android-1.5.2.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/02519b7e500c868692bbecfd70589d0b/transformed/jetified-kotlinx-coroutines-core-jvm-1.5.2.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/967f6849b16f1cb2023228002fed9e12/transformed/jetified-kotlin-stdlib-jdk8-1.5.30.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/071ddd49e5bceeb4b94199d9ff4ef1ec/transformed/jetified-kotlin-stdlib-jdk7-1.5.30.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/4b926fb0a6c4143a665ed59d9e7bf9d7/transformed/jetified-kotlin-stdlib-1.7.10.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f7a619f929dcf6c174ee4f5b5e9efacd/transformed/jetified-kotlin-stdlib-common-1.7.10.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/57e903c5f6a8d0564705d62628822c6a/transformed/jetified-kotlin-stdlib-jdk8-1.7.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/dc22070df8763f152ac41851e8f90991/transformed/jetified-kotlin-stdlib-jdk7-1.7.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/215d685833246c1416f4e39a4a1b37b3/transformed/jetified-kotlin-stdlib-1.7.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/6b28c2e316538df26a11084333f7de8a/transformed/jetified-kotlin-stdlib-common-1.7.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/dc7b9623710f0c797804b6e2023ed814/transformed/jetified-annotations-16.0.2.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/a02834ff9d362e23ee3a8e8bb97bd08b/transformed/constraintlayout-1.1.3-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout-solver/1.1.3/54abe9ffb22cc9019b0b6fcc10f185cc4e67b34e/constraintlayout-solver-1.1.3.jar</arg>
@@ -155,10 +153,10 @@
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.7.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.30" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.30" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.10" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:16.0.2" level="project" />
     <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout-solver:1.1.3" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.6" level="project" />
