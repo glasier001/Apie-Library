@@ -22,13 +22,13 @@ android {
             exclude 'classes.dex'
         }
     }
-    compileSdkVersion 33
+    compileSdkVersion 31
 
 
     defaultConfig {
         applicationId "com.example.apieproject"
         minSdkVersion 24
-        targetSdkVersion 33
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
