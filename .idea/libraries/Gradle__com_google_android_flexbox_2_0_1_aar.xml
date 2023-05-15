@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android:flexbox:2.0.1@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fe48a0d90f9f20230fe5832829e4446a/transformed/jetified-flexbox-2.0.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/daccb1fb332188d8d113f5474e2e84e1/transformed/jetified-flexbox-2.0.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fe48a0d90f9f20230fe5832829e4446a/transformed/jetified-flexbox-2.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fe48a0d90f9f20230fe5832829e4446a/transformed/jetified-flexbox-2.0.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fe48a0d90f9f20230fe5832829e4446a/transformed/jetified-flexbox-2.0.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/daccb1fb332188d8d113f5474e2e84e1/transformed/jetified-flexbox-2.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/daccb1fb332188d8d113f5474e2e84e1/transformed/jetified-flexbox-2.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/daccb1fb332188d8d113f5474e2e84e1/transformed/jetified-flexbox-2.0.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
