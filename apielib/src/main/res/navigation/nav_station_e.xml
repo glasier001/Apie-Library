@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/scenarioFragment"
-        android:name="com.example.apielib.ui.ScenarioFragment"
+        class="com.example.apielib.ui.ScenarioFragment"
         android:label="ScenarioFragment"
         tools:layout="@layout/fragment_scenario">
         <argument
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/stationEFragment"
-        android:name="com.example.apielib.ui.StationEFragment"
+        class="com.example.apielib.ui.StationEFragment"
         android:label="fragment_station_e"
         tools:layout="@layout/fragment_station_e"/>
 </navigation>

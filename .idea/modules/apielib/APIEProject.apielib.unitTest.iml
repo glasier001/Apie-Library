@@ -34,11 +34,11 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/dd05b90b082a0bd14148acb63c1faa4c/transformed/jetified-kotlin-stdlib-jdk8-1.5.30.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/c33efcbbebf5b9c01f06024f145c4c98/transformed/jetified-kotlin-android-extensions-runtime-1.7.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/8f6e0d4732c9730eaa923a13e5c8b670/transformed/jetified-core-ktx-1.2.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/4fd850a18af0b8a8cdf08990c172e75b/transformed/jetified-collection-ktx-1.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/49d9f8c29c44b179790c52e4df55ce5c/transformed/jetified-lifecycle-livedata-core-ktx-2.3.0-alpha02-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/7342ab08993ef3c2231844102ec16183/transformed/jetified-zoomlayout-1.7.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/467a708b0d6881c2fafc1ed4b09774ce/transformed/jetified-egloo-0.4.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/d339df9dcfa72b946dc40600c3504180/transformed/jetified-kotlin-stdlib-jdk7-1.5.30.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/49d9f8c29c44b179790c52e4df55ce5c/transformed/jetified-lifecycle-livedata-core-ktx-2.3.0-alpha02-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/4fd850a18af0b8a8cdf08990c172e75b/transformed/jetified-collection-ktx-1.1.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/28e3e56555551b6aad5373fa9ef21f8c/transformed/jetified-retrofit-2.8.1.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/1d1db7d2e979ea557acab283b42f011e/transformed/jetified-logging-interceptor-4.6.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/b15a7a27dfa0fbab7899d75bd20df41f/transformed/jetified-okhttp-4.6.0.jar</arg>
@@ -203,8 +203,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.30" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.7.10" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection-ktx:1.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.30" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection-ktx:1.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.retrofit2:retrofit:2.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:logging-interceptor:4.6.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:okhttp:4.6.0" level="project" />
@@ -234,9 +234,9 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.databinding:databinding-adapters:7.0.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata-ktx:2.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core-ktx:1.2.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0-alpha02@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.otaliastudios:zoomlayout:1.7.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.otaliastudios.opengl:egloo:0.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0-alpha02@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.navigation:navigation-common-ktx:2.3.5@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.navigation:navigation-ui:2.3.5@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.material:material:1.2.0-alpha06@aar" level="project" />

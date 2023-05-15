@@ -6,7 +6,7 @@
     app:startDestination="@id/scenarioFragment">
     <fragment
         android:id="@+id/scenarioFragment"
-        android:name="com.example.apielib.ui.ScenarioFragment"
+       android:name="com.example.apielib.ui.ScenarioFragment"
         android:label="ScenarioFragment"
         tools:layout="@layout/fragment_scenario">
         <action
