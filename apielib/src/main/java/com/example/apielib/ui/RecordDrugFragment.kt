@@ -4,6 +4,7 @@ import android.Manifest
 import android.media.MediaRecorder
 import android.os.Bundle
 import android.os.SystemClock
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -47,6 +48,7 @@ class RecordDrugFragment : Fragment(R.layout.fragment_record_drug) {
                 Station.STATION_E, Station.STATION_SUBMIT -> {
                     state?.let { isRecording -> if (isRecording) stopRecording() }
                 }
+                else ->{ Log.e("RecordDrugFragment","else")}
             }
         })
     }

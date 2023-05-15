@@ -1,6 +1,7 @@
 package com.example.apielib.ui
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -54,6 +55,7 @@ class GcsFragment : Fragment() {
 
                     })
                 }
+                else ->{ Log.e("GcsFragment","else")}
             }
         })
 

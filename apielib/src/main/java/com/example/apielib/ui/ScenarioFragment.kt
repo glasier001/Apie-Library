@@ -4,6 +4,7 @@ import android.app.Dialog
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -61,12 +62,14 @@ class ScenarioFragment : Fragment() {
                     findNavController().navigate(R.id.action_scenarioFragment_to_stationIFragment)
                 Station.STATION_E ->
                     findNavController().navigate(R.id.action_scenarioFragment_to_stationEFragment)
+                else ->{ Log.e("ScenarioFragmentA","else")}
             }
             when (args.station) {
                 Station.STATION_P, Station.STATION_I, Station.STATION_E -> {
                     (activity as ApieActivity).floatingCountdownView.visibility = View.VISIBLE
                     (activity as ApieActivity).floatingCountdownView.start(APIEPackage.STATION_DURATION)
                 }
+                else ->{ Log.e("ScenarioFragmentB","else")}
             }
         }
         requireActivity().onBackPressedDispatcher.addCallback(this) {
