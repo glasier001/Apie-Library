@@ -51,10 +51,10 @@ class DialogAudioFile {
             val btnSkip = dialog.findViewById(R.id.btnSkip) as Button
             val btnCancel = dialog.findViewById(R.id.btnCancel) as Button
 
-            val player = ExoPlayerFactory.newSimpleInstance(
-                context,
-                DefaultTrackSelector(DefaultBandwidthMeter.Builder(context).build())
-            )
+//            val player = ExoPlayerFactory.newSimpleInstance(
+//                context,
+//                DefaultTrackSelector(DefaultBandwidthMeter.Builder(context).build())
+//            )
 
             val downloadCache = SimpleCache(
                 File(context.getCacheDir(), "exoCache"),
@@ -71,62 +71,62 @@ class DialogAudioFile {
                     Uri.parse(uri)
                 )
 
-            player.addListener(object : Player.EventListener {
-                override fun onTimelineChanged(timeline: Timeline, manifest: Any?, reason: Int) {
-                    Log.d("exo", "timeLine Changed")
-                }
-
-                override fun onTracksChanged(
-                    trackGroups: TrackGroupArray,
-                    trackSelections: TrackSelectionArray
-                ) {
-                }
-
-                override fun onLoadingChanged(isLoading: Boolean) {
-                    Log.d("exo", "loding changed= $isLoading")
-                }
-
-                override fun onPlayerStateChanged(playWhenReady: Boolean, playbackState: Int) {
-                    Log.d("exo", "state changed")
-                }
-
-                override fun onRepeatModeChanged(repeatMode: Int) {}
-                override fun onShuffleModeEnabledChanged(shuffleModeEnabled: Boolean) {}
-                override fun onPlayerError(error: ExoPlaybackException) {
-                    Log.e("exo", "exoplayer error", error)
-                }
-
-                override fun onPositionDiscontinuity(reason: Int) {}
-                override fun onPlaybackParametersChanged(playbackParameters: PlaybackParameters) {}
-                override fun onSeekProcessed() {
-                    Log.d("exo", "seek processed")
-                }
-            })
-            player.prepare(mediaSource)
-
-            playerView.player = player
-
-            player.playWhenReady = true
-
-            btnSkip.setOnClickListener {
-                callBack?.onDoneClick()
-                player.stop()
-                downloadCache.release()
-                dialog.dismiss()
-            }
-
-            btnCancel.setOnClickListener {
-                callBack?.onCancelClick()
-                player.stop()
-                downloadCache.release()
-                dialog.dismiss()
-            }
-
-            imgCancel.setOnClickListener {
-                callBack?.onDoneClick()
-                player.stop()
-                downloadCache.release()
-                dialog.dismiss() }
+//            player.addListener(object : Player.EventListener {
+//                override fun onTimelineChanged(timeline: Timeline, manifest: Any?, reason: Int) {
+//                    Log.d("exo", "timeLine Changed")
+//                }
+//
+//                override fun onTracksChanged(
+//                    trackGroups: TrackGroupArray,
+//                    trackSelections: TrackSelectionArray
+//                ) {
+//                }
+//
+//                override fun onLoadingChanged(isLoading: Boolean) {
+//                    Log.d("exo", "loding changed= $isLoading")
+//                }
+//
+//                override fun onPlayerStateChanged(playWhenReady: Boolean, playbackState: Int) {
+//                    Log.d("exo", "state changed")
+//                }
+//
+//                override fun onRepeatModeChanged(repeatMode: Int) {}
+//                override fun onShuffleModeEnabledChanged(shuffleModeEnabled: Boolean) {}
+//                override fun onPlayerError(error: ExoPlaybackException) {
+//                    Log.e("exo", "exoplayer error", error)
+//                }
+//
+//                override fun onPositionDiscontinuity(reason: Int) {}
+//                override fun onPlaybackParametersChanged(playbackParameters: PlaybackParameters) {}
+//                override fun onSeekProcessed() {
+//                    Log.d("exo", "seek processed")
+//                }
+//            })
+//            player.prepare(mediaSource)
+//
+//            playerView.player = player
+//
+//            player.playWhenReady = true
+//
+//            btnSkip.setOnClickListener {
+//                callBack?.onDoneClick()
+//                player.stop()
+//                downloadCache.release()
+//                dialog.dismiss()
+//            }
+//
+//            btnCancel.setOnClickListener {
+//                callBack?.onCancelClick()
+//                player.stop()
+//                downloadCache.release()
+//                dialog.dismiss()
+//            }
+//
+//            imgCancel.setOnClickListener {
+//                callBack?.onDoneClick()
+//                player.stop()
+//                downloadCache.release()
+//                dialog.dismiss() }
 
             dialog.show()
         }catch (e: Exception){
