@@ -8,10 +8,12 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.apielib.APIEPackage
 import com.example.apielib.R
+import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.SimpleExoPlayer
 import com.google.android.exoplayer2.source.ProgressiveMediaSource
-import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory
+import com.google.android.exoplayer2.upstream.DefaultDataSource
+
 import com.google.android.exoplayer2.util.Util
 import kotlinx.android.synthetic.main.fragment_admission.*
 import kotlinx.android.synthetic.main.fragment_drug_video.*
@@ -22,7 +24,7 @@ import vimeoextractor.VimeoExtractor
 import vimeoextractor.VimeoVideo
 
 
-class DrugVideoFragment : Fragment(R.layout.fragment_drug_video), Player.EventListener {
+class DrugVideoFragment : Fragment(R.layout.fragment_drug_video), Player.Listener {
     public var simpleExoPlayer: SimpleExoPlayer? = null
     private var secondVideoStarted = false
 
@@ -41,16 +43,9 @@ class DrugVideoFragment : Fragment(R.layout.fragment_drug_video), Player.EventLi
                     override fun onSuccess(video: VimeoVideo?) {
                         activity?.runOnUiThread {
                             simpleExoPlayer = SimpleExoPlayer.Builder(it).build()
-                            simpleExoPlayer!!.prepare(
-                                ProgressiveMediaSource.Factory(
-                                    DefaultHttpDataSourceFactory(
-                                        Util.getUserAgent(
-                                            it,
-                                            it.packageName
-                                        )
-                                    )
-                                )
-                                    .createMediaSource(Uri.parse(video?.streams?.get("720p")))
+                            simpleExoPlayer?.prepare(
+                                ProgressiveMediaSource.Factory(DefaultDataSource.Factory(context!!))
+                                    .createMediaSource(MediaItem.fromUri(Uri.parse(video?.streams?.get("720p"))))
                             )
                             playerView.player = simpleExoPlayer
                             simpleExoPlayer!!.addListener(this@DrugVideoFragment)

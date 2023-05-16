@@ -3,6 +3,7 @@ package com.example.apielib.ui
 import android.net.Uri
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -21,12 +22,13 @@ import com.example.apielib.R
 import com.example.apielib.databinding.FragmentAdmissionBinding
 import com.example.apielib.utils.Status
 import com.example.apielib.viewmodel.AdmissionVM
+import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.SimpleExoPlayer
 import com.google.android.exoplayer2.source.ProgressiveMediaSource
-import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory
-import com.google.android.exoplayer2.util.Util
-import com.google.android.exoplayer2.video.VideoListener
+import com.google.android.exoplayer2.upstream.DefaultDataSource
+import com.google.android.exoplayer2.video.VideoRendererEventListener
+import com.google.android.exoplayer2.video.VideoSize
 import kotlinx.android.synthetic.main.activity_apie.*
 import kotlinx.android.synthetic.main.fragment_admission.*
 import kotlinx.android.synthetic.main.fragment_admission.pdfView
@@ -37,7 +39,7 @@ import vimeoextractor.VimeoExtractor
 import vimeoextractor.VimeoVideo
 
 
-class AdmissionFragment : Fragment(), Player.EventListener, VideoListener {
+class AdmissionFragment : Fragment(), Player.Listener, VideoRendererEventListener {
     val admissionVM: AdmissionVM by activityViewModels()
     private lateinit var binding: FragmentAdmissionBinding
     var simpleExoPlayer: SimpleExoPlayer? = null
@@ -95,19 +97,12 @@ class AdmissionFragment : Fragment(), Player.EventListener, VideoListener {
                         activity?.runOnUiThread {
                             simpleExoPlayer = SimpleExoPlayer.Builder(it).build()
                             simpleExoPlayer?.prepare(
-                                ProgressiveMediaSource.Factory(
-                                    DefaultHttpDataSourceFactory(
-                                        Util.getUserAgent(
-                                            it,
-                                            it.packageName
-                                        )
-                                    )
-                                )
-                                    .createMediaSource(Uri.parse(video?.streams?.get("720p")))
+                                ProgressiveMediaSource.Factory(DefaultDataSource.Factory(context!!))
+                                    .createMediaSource(MediaItem.fromUri(Uri.parse(video?.streams?.get("720p"))))
                             )
                             playerView?.player = simpleExoPlayer
                             simpleExoPlayer?.addListener(this@AdmissionFragment)
-                            simpleExoPlayer?.addVideoListener(this@AdmissionFragment)
+//                            simpleExoPlayer?.addVideoListener(this@AdmissionFragment)
                         }
 
                     }
@@ -144,20 +139,31 @@ class AdmissionFragment : Fragment(), Player.EventListener, VideoListener {
         }
     }
 
-    override fun onVideoSizeChanged(
-        width: Int,
-        height: Int,
-        unappliedRotationDegrees: Int,
-        pixelWidthHeightRatio: Float
-    ) {
-        super.onVideoSizeChanged(width, height, unappliedRotationDegrees, pixelWidthHeightRatio)
+    override fun onVideoSizeChanged(videoSize: VideoSize) {
+        Log.e("videosize",videoSize.height.toString())
+
         var p: ViewGroup.LayoutParams = playerView.layoutParams
         var currWidth: Int = playerView.width
 
         p.width = currWidth
-        p.height = (height / width * currWidth).toFloat().toInt()
+        p.height = (videoSize.height /videoSize.width * currWidth).toFloat().toInt()
         playerView.requestLayout()
     }
+
+//    override fun onVideoSizeChanged(
+//        width: Int,
+//        height: Int,
+//        unappliedRotationDegrees: Int,
+//        pixelWidthHeightRatio: Float
+//    ) {
+//        super.onVideoSizeChanged(width, height, unappliedRotationDegrees, pixelWidthHeightRatio)
+//        var p: ViewGroup.LayoutParams = playerView.layoutParams
+//        var currWidth: Int = playerView.width
+//
+//        p.width = currWidth
+//        p.height = (height / width * currWidth).toFloat().toInt()
+//        playerView.requestLayout()
+//    }
 
     override fun onDestroyView() {
         simpleExoPlayer?.release()

@@ -14,9 +14,10 @@ import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.navArgs
 import com.example.apielib.APIEPackage
 import com.example.apielib.databinding.FragmentVideoBinding
+import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.SimpleExoPlayer
 import com.google.android.exoplayer2.source.ProgressiveMediaSource
-import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory
+import com.google.android.exoplayer2.upstream.DefaultDataSource
 import com.google.android.exoplayer2.util.Util
 import kotlinx.android.synthetic.main.fragment_drug_video.*
 import vimeoextractor.OnVimeoExtractionListener
@@ -60,16 +61,9 @@ class VideoFragment : DialogFragment() {
                     override fun onSuccess(video: VimeoVideo?) {
                         activity?.runOnUiThread {
                             simpleExoPlayer = SimpleExoPlayer.Builder(it).build()
-                            simpleExoPlayer!!.prepare(
-                                ProgressiveMediaSource.Factory(
-                                    DefaultHttpDataSourceFactory(
-                                        Util.getUserAgent(
-                                            it,
-                                            it.packageName
-                                        )
-                                    )
-                                )
-                                    .createMediaSource(Uri.parse(video?.streams?.get("720p")))
+                            simpleExoPlayer?.prepare(
+                                ProgressiveMediaSource.Factory(DefaultDataSource.Factory(context!!))
+                                    .createMediaSource(MediaItem.fromUri(Uri.parse(video?.streams?.get("720p"))))
                             )
                             binding.videoView.player = simpleExoPlayer
                             simpleExoPlayer!!.playWhenReady = true
