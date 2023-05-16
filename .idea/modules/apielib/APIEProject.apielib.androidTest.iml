@@ -68,8 +68,8 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/8f6e0d4732c9730eaa923a13e5c8b670/transformed/jetified-core-ktx-1.2.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/5cffc8873e4d5e4318cf14fd375d8010/transformed/jetified-appcompat-resources-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/a3ad3de0ad1eb72657b68f9aaa40c6b9/transformed/drawerlayout-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/eb7d69a105c6dc70058f420b627eb818/transformed/jetified-exoplayer-2.12.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/db8f5fba7d0d085dcf54a4c4a3299311/transformed/jetified-exoplayer-ui-2.12.1-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/cccf8b14b9162c63379bd2f053c5391d/transformed/jetified-exoplayer-2.11.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/082c8c056b499e70db2dbe82d1dd6ad1/transformed/jetified-exoplayer-ui-2.11.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e623f08e7b3cc3d6e9d506b148134bb2/transformed/media-1.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/b990b117587dc596d5d6b672a461719d/transformed/coordinatorlayout-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/c9cef7d919569e73ab6c1327a5a7b6f7/transformed/recyclerview-1.1.0-api.jar</arg>
@@ -136,15 +136,11 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/3e5336d8dca5fa253cea126fe0d9a147/transformed/constraintlayout-1.1.3-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout-solver/1.1.3/54abe9ffb22cc9019b0b6fcc10f185cc4e67b34e/constraintlayout-solver-1.1.3.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/69bd4ac08bb9fa7e01bc518f9724011e/transformed/jetified-library-1.9.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/61c913c0d55ca47d3446ab9b7e652fe8/transformed/jetified-exoplayer-core-2.12.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/5d0d810830c800f376415fb1d30b0c8f/transformed/jetified-exoplayer-common-2.12.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/59af52bed27b289d27d92260939e90b2/transformed/jetified-guava-27.1-android.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/897c0b32277917887437821c8a6e7f1a/transformed/jetified-failureaccess-1.0.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/bbfe2515bb940336296ec9531e393c37/transformed/jetified-listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/4c6c67d3883659d92b505a75e149c9ee/transformed/jetified-exoplayer-extractor-2.12.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/c64c306e86ec13f6591ad6d4172b8304/transformed/jetified-exoplayer-dash-2.12.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/18e91a06bd820b232baaa27ab3024f45/transformed/jetified-exoplayer-hls-2.12.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/b2347799b0e977b5c2c037a1f841199b/transformed/jetified-exoplayer-smoothstreaming-2.12.1-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/e61bb062418d0af35df9114d5946b0ac/transformed/jetified-exoplayer-core-2.11.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/911ff570a55386ad097a0d19cb396e31/transformed/jetified-exoplayer-dash-2.11.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/52243109971eb45d014808846819b014/transformed/jetified-exoplayer-hls-2.11.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/886bae24eefb6356e09b8279f80e3b32/transformed/jetified-exoplayer-smoothstreaming-2.11.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/6a4176b0632ab51fcbc79a2b56ff90b2/transformed/multidex-2.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/d021f779bbd535081342c9c4726aad0f/transformed/jetified-flexbox-2.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/2bada70b51bd3341204c7edb7672a228/transformed/jetified-sdp-android-1.0.6-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e3b78c2c59f7151afc025be0a46dc550/transformed/jetified-countdownview-2.1.6-api.jar</arg>
@@ -241,9 +237,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-core:2.19.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.objenesis:objenesis:2.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.constraintlayout:constraintlayout-solver:1.1.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:guava:27.1-android" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:failureaccess:1.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.ed-george:AndroidVimeoExtractor:1.2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.room:room-testing:2.4.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-testing:2.1.0@aar" level="project" />
@@ -279,8 +272,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core-ktx:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat-resources:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.drawerlayout:drawerlayout:1.1.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer:2.12.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-ui:2.12.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer:2.11.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-ui:2.11.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.media:media:1.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.recyclerview:recyclerview:1.1.0@aar" level="project" />
@@ -323,12 +316,11 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-experimental:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.constraintlayout:constraintlayout:1.1.3@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.pixplicity.easyprefs:library:1.9.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-core:2.12.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-common:2.12.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-extractor:2.12.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-dash:2.12.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-hls:2.12.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-smoothstreaming:2.12.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-core:2.11.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-dash:2.11.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-hls:2.11.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-smoothstreaming:2.11.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.multidex:multidex:2.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android:flexbox:2.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.intuit.sdp:sdp-android:1.0.6@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.iwgang:countdownview:2.1.6@aar" level="project" />
